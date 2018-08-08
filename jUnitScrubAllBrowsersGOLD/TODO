@@ -1,0 +1,29 @@
+DEBUG - FILE WRITE returns null in setup, works after: am I calling it before there's a filename?
+DEBUG - JUNIT; some simple stub @Tests fail with null pointer, others near identical succeed
+
+ADD FEATURE: handle missing or mistyped configuration file variables, missing file, etc.
+REFACTOR: remove or Select feature: webScrub  reports to CSV, HTML
+ADD FEATURE: add substrings to test name report to indicate tester, browser, scrum, weekOf, TBD??
+ADD FEATURE: MAX and NOTATION to LIMIT when DIV IS TOO BIG		
+ 
+refactor with folders to match Enrique's setup
+[optional? java? language] 
+ common
+  - test specific
+  - - output path/target (O/S dependent)
+  - - tester, build, scrum, rundate, type (smoke, acceptance, maint)
+ page objects
+  - URL, Title, <List> test elements, array to exclude
+  
+ test/suite
+  -  using common methods to work with page objects when running tests
+  test (list of URLs)
+   - title, URI currentURL, expected, 
+   - test specific properties: browser, device
+   - click, exists, results, time to load, newPageMustHave widget(s)
+    - - LOG TO their unique FILE
+    - - DURATION
+    -
+  DEBUG - FILE WRITE returns null in setup, works after: am I calling it before there's a filename?
+  DEBUG - JUNIT; some simple stub @Tests fail with null pointer, others near identical succeed
+  Debug? - JUNIT, testNG, Maven, Ant? convert to MAIN avoid add-ons? 
